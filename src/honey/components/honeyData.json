@@ -1,0 +1,32 @@
+{ 
+  "honey": [
+    {
+      "name": "Roger's honey farm",
+      "address": "123 Warwick Rd",
+      "phone": "123-4567",
+      "retail locations": [{
+        "name": "coffee exchange",
+        "address": "155 wickenden street providence ri 02906",
+        "phone": "456-6789"
+        },
+        {"name": "east side market",
+          "address": "155 pitman street providence ri 02906",
+          "phone": "456-6789"
+        }]
+    },
+    {
+        "name": "Danny's honey pot",
+        "address": "456 Providence Path",
+        "phone": "456-6789",
+        "retail locations": [{
+          "name": "coffee exchange",
+          "address": "155 wickenden street providence ri 02906",
+          "phone": "456-6789"
+          },
+          {"name": "east side market",
+            "address": "155 pitman street providence ri 02906",
+            "phone": "456-6789"
+          }]
+    }
+  ]
+}
