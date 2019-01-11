@@ -26,8 +26,10 @@ const alwaysOptions = (
 
 const Header = (props) => (
   <header className="main-header">
-    <h1>{props.title}</h1>
-    <p>{props.subtitle}</p>
+    <section className='title'>
+      <h1>{props.title}</h1>
+      <p>{props.subtitle}</p>
+    </section>
     <nav>
       { 
         // && means only ifthis is true, run the following thing. Shorter than ternary ! 

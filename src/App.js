@@ -10,6 +10,7 @@ import SignOut from './auth/components/SignOut'
 import ChangePassword from './auth/components/ChangePassword'
 import honeyData from './honey/components/honeyData.json'
 import HoneyIndex from './honey/components/HoneyIndex.js'
+import HoneyShow from './honey/components/HoneyShow.js'
 
 class App extends Component {
   constructor () {
@@ -57,8 +58,12 @@ class App extends Component {
           <AuthenticatedRoute user={user} path='/change-password' render={() => (
             <ChangePassword flash={this.flash} user={user} />
           )} />
-          <Route path='/honey' render={() => (
+          <Route exact path='/honey' render={() => (
             <HoneyIndex honeyData={honeyData} />
+          )} />
+
+          <Route exact path='/honey/:id/show' render={({match}) => (
+            <HoneyShow honeyData={honeyData} match={match} />
           )} />
         </main>
       </React.Fragment>
